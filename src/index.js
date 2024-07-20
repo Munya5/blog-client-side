@@ -11,19 +11,20 @@ import Login from './pages/Login';
 import UserProfile from './pages/UserProfile';
 import Authors from './pages/Authors';
 import CategoryPosts from './pages/CategoryPosts';
-import CreatePost from './pages/CreatePosts';
+import CreatePost from './pages/CreatePost';
 import AuthorPosts from './pages/AuthorPosts';
 import Dashboard from './pages/Dashboard';
 import EditPost from './pages/EditPosts';
-import DeletePost from './pages/DeletePosts';
+import DeletePost from './pages/DeletePost';
 import Logout from './pages/Logout';
+import UserProvider from './context/userContext';
 
 
 const router = createBrowserRouter([
 
   {
     path: '/',
-    element: <Layout />,
+    element: <UserProvider><Layout/></UserProvider>,
     errorElement: <ErrorPage />,
     children: [
       {index: true, element: <Home />},
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
       {path: 'myposts/:id', element: <Dashboard />},
       {path: 'posts/:id/edit', element: <EditPost />},
       {path: 'posts/:id/delete', element: <DeletePost />},
-      {path: 'logout/:id/', element: <Logout />},
+      {path: 'logout/', element: <Logout />},
       
     ]
   }
