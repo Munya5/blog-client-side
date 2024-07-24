@@ -80,7 +80,7 @@ const CreatePost = () => {
     <section className="create-post">
       <div className="container">
         <h2>Create Post</h2>
-        {error && <p className="error">{error}</p>}
+        {error && <p className="form__error-message">{error}</p>}
         <form className="form create-post__form" onSubmit={createPost}>
           <input type='text' placeholder='Title' value={title} onChange={e => setTitle(e.target.value)} autoFocus />
           <select name="category" value={category} onChange={e => setCategory(e.target.value)}>
