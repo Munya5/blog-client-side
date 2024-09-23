@@ -24,7 +24,7 @@ const EditPost = () => {
   if(!token) {
     navigate('/login')
   }
- }, [])
+ }, [navigate, token])
 
 
   const modules = {
@@ -62,7 +62,7 @@ const EditPost = () => {
     }
 
     getPost();
-  }, [])
+  }, [id])
 
   const editPost = async (e) => {
     e.preventDefault();

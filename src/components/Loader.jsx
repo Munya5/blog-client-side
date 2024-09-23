@@ -1,14 +1,9 @@
 import React from 'react'
-import LoadingGif from '../images/loading.gif'
+import { RiseLoader } from 'react-spinners'
 
 const Loader = () => {
   return (
-    <div className='loader'>
-      <div className="loader__image">
-
-        <img src = {LoadingGif} alt='Loading...'/>
-      </div>
-    </div>
+    <RiseLoader />
   )
 }
 

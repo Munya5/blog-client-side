@@ -203,12 +203,19 @@ nav {
 
 
 }
-
 .nav__logo {
   width: 4rem;
   display: block;
-  border-radius: 50%;
+  overflow: hidden; /* Ensure the image is clipped to the border radius */
+  border-radius: 35%; /* Use 50% for circular shape */
 }
+
+.nav__logo img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 25%; /* Apply border radius to the image */
+}
+
 
 .nav__menu  {
 
@@ -282,9 +289,7 @@ footer {
   cursor: default;
 }
 
-.post :hover {
-  box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.1);
-}
+
 
 .post__thumbnail {
   border-radius: var(--radius-3);
@@ -569,6 +574,13 @@ input , select , textarea {
 
   }
 
+  .footer__categories {
+    gap:3rem
+  }
+
+
+
+
   h2 {
     font-size: 1.6rem;
   }
@@ -723,3 +735,19 @@ input , select , textarea {
   aspect-ratio: 1/1;
 }
 
+@media screen and (min-width: 800px) and (max-width: 1140px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem; 
+  }
+
+  .footer__categories {
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 3rem; 
+  }
+}
