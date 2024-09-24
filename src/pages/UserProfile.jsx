@@ -95,11 +95,11 @@ const UserProfile = () => {
   return (
     <section className="profile">
       <div className="container profile__container">
-        <Link to={`/myposts/${currentUser.id}`} className='btn'>My posts</Link>
+        <Link to={`/myposts/${currentUser.id}`} className='btn'>My Posts</Link>
         <div className="profile__details">
           <div className="avatar__wrapper">
             <div className="profile__avatar">
-              <img src={`${process.env.REACT_APP_BASE_ASSETS_URL}/uploads/${avatar}`} alt='' />
+            <img src={`${process.env.REACT_APP_BASE_ASSETS_URL}/uploads/${avatar}`} alt='User Avatar' />
             </div>
             <form className="avatar__form">
               <input type='file' name='avatar' id='avatar' onChange={e => setAvatar(e.target.files[0])} accept='image/png, image/jpeg' />
