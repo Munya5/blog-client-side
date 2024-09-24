@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+Blog Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Introduction
 
-## Available Scripts
+Welcome to the MERN Stack Blog Platform! This platform allows users to create, read, update, and delete blog posts. The app is built using MongoDB, Express, React, and Node.js (MERN) and is styled beautifully using CSS. This document serves as a guide on how to operate and navigate the platform, along with instructions for checking and testing various functionalities on the live environment.
 
-In the project directory, you can run:
+Key Features
 
-### `npm start`
+User Authentication: Users can sign up and log in. Create Post: Users can write and publish blog posts. Edit Post: Users can edit their published blog posts. Delete Post: Users can remove their posts. Change Avatar: Users can upload and update their profile picture. View Posts by Category: Users can filter posts by categories like Agriculture, Business, Education, etc. View Posts by User: Users can view all the posts created by a specific user. Comment Section: Engage with other users by leaving comments on posts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+MongoDB: Database for storing blog data, user information, and other application data. Express: Backend server for handling API requests and routing. React: Frontend for creating an interactive user interface. Node.js: Runtime environment for executing JavaScript on the server. Axios: For handling HTTP requests between the frontend and backend. CSS: For styling the user interface.
 
-### `npm test`
+Live Deployment The application is hosted on a live server and can be accessed via the following URL: 'https://main--resilient-cobbler-e673b6.netlify.app/'
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Using the Application
 
-### `npm run build`
+User Authentication
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Sign Up: Click on the "Sign Up" button located on the navigation bar. Fill in your details (username, email, password). You will be redirected to your dashboard once signed up successfully.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Log In: Click on the "Log In" button. Enter your email and password. On successful login, you will be directed to your profile page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Posts Management
 
-### `npm run eject`
+Creating a Post Log in to your account. Navigate to the "Create Post" section. Enter the post title, category, description, and thumbnail image. Once you're satisfied, click "Publish" to post your blog. You can view your published post on the homepage.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Editing a Post Navigate to your post by either clicking on it in the homepage feed or your profile. Once in the post view, click the "Edit" button. Modify the title, content, category, or thumbnail as needed. Save your changes by clicking "Update Post".
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Deleting a Post Open your post. Click on the "Delete" button. Confirmation the deletion msg pops up.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Potential Issues and Troubleshooting Thumbnail Upload Fails:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Ensure the file size and format (jpg, png) are supported. Traffic may sometimes slow you down as i am using the free tier of render to host my server side.
 
-## Learn More
+Enjoy navigating through my blog and feel free to add posts of your own to educate.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This blog platform is designed to be user-friendly and offers various features for content creation, viewing, and management. The integration of MongoDB, Express, React, and Node.js ensures a robust backend and a dynamic frontend, making it an ideal platform for bloggers and readers alike.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy blogging! 🚀
